@@ -127,7 +127,17 @@ The agent only allows an Ollama server on localhost to help prevent source code
 from being sent to an external service. LLM reports can miss issues or include
 false positives, so verify all findings manually.
 
-## Example scan results
+## Intentional training vulnerabilities
+
+- **App 1:** inserts user input into `innerHTML`; checks a demo access code and
+  displays the protected content in browser-side JavaScript.
+- **App 2:** concatenates a search term into SQL; joins a user-supplied filename
+  to a path without restricting it to the `public/` directory.
+
+Use these examples only to learn how to identify and fix vulnerabilities. Do
+not test against systems or data you do not own or have permission to assess.
+
+## Scan results
 
 The following examples were captured from the commands above. Rule-based results
 are repeatable for the current source, while LLM results can vary between runs
@@ -201,12 +211,14 @@ output as triage assistance, confirm every finding against the cited source,
 and do not rely on model severity or confidence ratings as a substitute for
 analyst judgment.
 
-## Intentional training vulnerabilities
+## Citation
+BibTeX:
 
-- **App 1:** inserts user input into `innerHTML`; checks a demo access code and
-  displays the protected content in browser-side JavaScript.
-- **App 2:** concatenates a search term into SQL; joins a user-supplied filename
-  to a path without restricting it to the `public/` directory.
-
-Use these examples only to learn how to identify and fix vulnerabilities. Do
-not test against systems or data you do not own or have permission to assess.
+```bibtex
+@software{dat_nguyenvn_security_agent_playground_2026,
+  author  = {{dat-nguyenvn}},
+  title   = {LLM_local-security-review-lab},
+  year    = {2026},
+  url     = {https://github.com/dat-nguyenvn/LLM_local-security-review-lab}
+}
+```
