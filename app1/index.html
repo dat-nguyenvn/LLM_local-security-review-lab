@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A security training demo that runs locally.">
+    <title>Web Security Playground</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Web Security Playground</h1>
+      <p>A web app for security review practice. Runs on localhost only.</p>
+      <label for="name">Display name</label>
+      <input id="name" type="text" placeholder="Enter a name">
+      <button id="greet" type="button">Greet</button>
+      <p id="greeting" class="result" role="status" aria-live="polite"></p>
+      <label for="access-code">Demo access code</label>
+      <input id="access-code" type="password" autocomplete="off">
+      <button id="unlock" type="button">Unlock demo content</button>
+      <p id="private-note" class="result" role="status" aria-live="polite"></p>
+      <p class="note">This training app intentionally contains security flaws. Do not use this code in production.</p>
+    </main>
+  </body>
+</html>
