@@ -6,6 +6,8 @@ A small security training lab for practicing source-code reviews. It contains
 two intentionally vulnerable apps, a rule-based scanner, and an LLM agent that
 uses a local Ollama model.
 
+**GitHub repository:** [dat-nguyenvn/LLM_local-security-review-lab](https://github.com/dat-nguyenvn/LLM_local-security-review-lab)
+
 > **Warning:** This repository intentionally contains insecure training code.
 > Run it only on your own computer. Do not deploy it publicly, use it with real
 > data, or reuse its vulnerable patterns in production. The Python app and the
