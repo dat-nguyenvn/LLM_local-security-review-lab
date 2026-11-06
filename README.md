@@ -1,6 +1,6 @@
 # Security Agent Playground
 
-![Security Agent Playground project overview](overview.jpeg)
+![Security Agent Playground project overview](overview1.jpeg)
 
 A small security training lab for practicing source-code reviews. It contains
 two intentionally vulnerable apps, a rule-based scanner, and an LLM agent that
